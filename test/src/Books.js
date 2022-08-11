@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Table } from 'antd';
 import 'antd/dist/antd.css';
+import Viewdata from "./Viewdata";
 
 
 export default function Books() {
   const [books, setBooks] = useState([]);
+  const [data,setData] = useState();
+  const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
@@ -81,7 +84,17 @@ export default function Books() {
         </tbody>
       </table> */}
 
-    <Table columns={columns} dataSource={books} pagination={{ pageSize: 5}} />
+    <Table columns={columns} dataSource={books} pagination={{ pageSize: 5}} 
+    onRow={(books, recordIndex) => ({
+            onClick: event => { 
+              console.log(event.target, books, recordIndex);
+              setIsShown(true);
+              setData(books);
+              
+             } 
+          })} />
+          
+        {isShown && <Viewdata {...data} /> }
 
     </div>
   );

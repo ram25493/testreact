@@ -49,10 +49,9 @@ table {
   margin-top: 10px;
 }
 
-tr:hover {
-  background-color: thistle;
+tr,td:hover {
+  background-color: oldlace;
 }
-
 
 .nav {
   padding: 20px;
@@ -74,3 +73,8 @@ tr:hover {
   font-style: italic;
 }
 
+.tagsdata{
+  padding: 10px;
+  display: grid;
+  direction: ltr;
+}
