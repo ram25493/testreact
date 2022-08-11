@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cssButton {
+  margin: 20px;
+  width: 150px;
+  font-size: 30px;
+  background-color: lightseagreen;
+  border-radius: 25px;
+}
+.ant-form {
+  width: 100%;
+}
+.antdform{
+  max-width: 100%;
+}
+
+.parent{
+  margin-top: 100px;
+  border: 3px solid black;
+  background-color: ivory;
+  border-radius: 25px;
+  border: 2px solid red;
+}
+.ant-input-lg {
+  padding: 6.5px 11px;
+  font-size: 16px;
+  width: 400px;
+}
+.form1 {
+  max-width: 100%;
+  align-content: center;
+  border: solid;
+  border-radius: 25px;
+  border-color: #181515;
+  padding: 100px;
+  background-color: ivory;
+}
+
+table {
+  border: 2px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr:hover {
+  background-color: thistle;
+}
+
+
+.nav {
+  padding: 20px;
+}
+
+.nav a {
+  /* border-radius: 4px; */
+  margin-right: 10px;
+  font-weight: 900;
+  color: black;
+  
+}
+
+.nav a.active {
+  color: #fff;
+  background: lightseagreen;
+}
+.nav a.inactive {
+  font-style: italic;
+}
+
