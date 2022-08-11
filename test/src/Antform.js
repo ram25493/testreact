@@ -68,7 +68,7 @@ export default function Antform() {
           <Form.Item name={['user', 'introduction']} label="Introduction">
             <Input.TextArea />
           </Form.Item>
-            <Button type="primary" htmlType="submit">
+            <Button type="secondary" htmlType="submit">
               Submit
             </Button>
         </Form>
