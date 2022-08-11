@@ -55,7 +55,7 @@ export default function Antform() {
             rules={[
               {
                 type: 'number',
-                min: 0,
+                min: 18,
                 max: 99,
               },
             ]}
@@ -68,7 +68,7 @@ export default function Antform() {
           <Form.Item name={['user', 'introduction']} label="Introduction">
             <Input.TextArea />
           </Form.Item>
-            <Button type="secondary" htmlType="submit">
+            <Button type="primary" htmlType="submit">
               Submit
             </Button>
         </Form>
