@@ -55,7 +55,7 @@ export default function Antform() {
             rules={[
               {
                 type: 'number',
-                min: 18,
+                min: 0,
                 max: 99,
               },
             ]}
