@@ -76,7 +76,7 @@ export default function Formexample() {
           onClick={submitForm}
           disabled={!areAllFieldsFilled}
         >
-          SUBMIT
+          SUBMIT DATA
         </button>
       </form>
     </div>
